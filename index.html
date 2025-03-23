@@ -5,47 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RNJA Nodo Baraya - Huila</title>
     <style>
-        /* Estilo general */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f3f3f3;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #2c5e1a;
+            background-color: #1b4d3e;
             color: #fff;
-            padding: 20px 10px;
+            padding: 15px;
             text-align: center;
-            margin-bottom: 20px;
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            text-transform: uppercase;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 5px;
         }
 
         nav {
-            background-color: #3a7a26;
+            background-color: #156239;
             padding: 10px;
             text-align: center;
-            margin-bottom: 20px;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         nav a:hover {
@@ -58,8 +48,7 @@
             background-position: center;
             color: #fff;
             text-align: center;
-            padding: 50px 10px;
-            margin-bottom: 20px;
+            padding: 50px 20px;
         }
 
         .hero h2 {
@@ -74,45 +63,34 @@
         .section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
-            background-color: #fff;
+            max-width: 1200px;
+            background: #fff;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .section h2 {
-            margin-top: 0;
-            color: #2c5e1a;
-            font-size: 1.8rem;
-        }
-
-        .section p {
-            margin: 10px 0;
-            font-size: 1.1rem;
-        }
-
-        .section ul {
-            padding-left: 20px;
-            list-style-type: disc;
+            color: #156239;
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         .section img {
             max-width: 100%;
             border-radius: 10px;
-            margin: 15px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         footer {
-            background-color: #2c5e1a;
+            background-color: #1b4d3e;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9rem;
         }
 
         footer a {
@@ -134,27 +112,46 @@
     <nav>
         <a href="#quienes-somos">¿Quiénes Somos?</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#region-andina">Región Andina</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
     <div class="hero">
-        <h2>Conectando juventud y medio ambiente</h2>
-        <p>Trabajando juntos por un futuro sostenible en Baraya, Huila.</p>
+        <h2>Unidos por el Ambiente</h2>
+        <p>Protegiendo los ecosistemas de la región andina desde Baraya, Huila.</p>
     </div>
 
     <section id="quienes-somos" class="section">
         <h2>¿Quiénes Somos?</h2>
-        <p>Somos el Nodo Baraya de la Red Nacional de Jóvenes de Ambiente (RNJA), comprometidos con la conservación, educación ambiental y acción climática en nuestra región. Promovemos el trabajo colaborativo para proteger nuestros ecosistemas y construir un futuro sostenible.</p>
-        <img src="nutria.jpg" alt="Nutria en su hábitat natural">
+        <p>El Nodo Baraya de la Red Nacional de Jóvenes de Ambiente trabaja por la protección del medio ambiente y la educación ambiental en la región andina. Nuestro compromiso es con la sostenibilidad y la biodiversidad.</p>
+        <img src="nutria.jpg" alt="Nutria en su hábitat">
     </section>
 
     <section id="proyectos" class="section">
-        <h2>Nuestros Proyectos</h2>
-        <ul>
-            <li>Reforestación de áreas degradadas en Baraya.</li>
-            <li>Conservación de especies como la nutria neotropical.</li>
-            <li>Capacitaciones en educación ambiental para jóvenes.</li>
-        </ul>
+        <h2>Proyectos Destacados</h2>
+        <div class="grid">
+            <div>
+                <img src="reforestacion.jpg" alt="Reforestación">
+                <h3>Reforestación</h3>
+                <p>Reforestamos áreas degradadas para recuperar ecosistemas clave.</p>
+            </div>
+            <div>
+                <img src="educacion.jpg" alt="Educación Ambiental">
+                <h3>Educación Ambiental</h3>
+                <p>Promovemos la conciencia ambiental entre los jóvenes de la región.</p>
+            </div>
+            <div>
+                <img src="conservacion.jpg" alt="Conservación de Especies">
+                <h3>Conservación</h3>
+                <p>Protegemos especies locales como la nutria neotropical.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="region-andina" class="section">
+        <h2>Región Andina</h2>
+        <p>Baraya, en el corazón de la región andina, es un punto estratégico para la biodiversidad del país. Nuestros proyectos están diseñados para preservar esta riqueza natural.</p>
+        <img src="region_andina.jpg" alt="Paisaje de la región andina">
     </section>
 
     <section id="contacto" class="section">
